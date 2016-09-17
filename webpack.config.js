@@ -7,24 +7,20 @@ module.exports = {
     path: path.join(__dirname, 'app', 'assets', 'javascripts'),
     filename: "bundle.js"
   },
-  resolve: {
-    extensions: ["", ".js", ".jsx"]
-  },
   module: {
     loaders: [
       {
-        test: /\.jsx?$/,
+        test: [/\.jsx?$/, /\.js?$/],
         exclude: /(node_modules|bower_components)/,
         loader: 'babel',
         query: {
-          presets: ['react', 'es2015']
+          presets: ['es2015', 'react']
         }
       }
     ]
   },
-  externals: {
-    "react": "React",
-    "react-dom": "ReactDOM"
-  },
-  devtool: 'source-maps'
+  devtool: 'source-maps',
+  resolve: {
+    extensions: ["", ".js", ".jsx"]
+  }
 };
