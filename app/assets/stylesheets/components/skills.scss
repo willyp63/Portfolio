@@ -1,0 +1,5 @@
+@import '../base/font_sizes';
+
+.skills-header {
+  @include header1($color: orange);
+}

@@ -1,0 +1,13 @@
+@import '../base/font_sizes';
+
+.about-header {
+  @include header1($color: orange);
+}
+
+.about-general {
+  @include header3($color: gray);
+}
+
+.about-specific {
+  @include text1($color: gray);
+}

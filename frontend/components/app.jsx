@@ -1,17 +1,24 @@
 import React from 'react';
 import NavBar from './nav_bar';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import About from './about';
+import Projects from './projects';
+import Skills from './skills';
+import Contact from './contact';
 
 const App = React.createClass({
   render () {
-    const path = this.props.location.pathname;
-    const segment = path.split('/')[1] || 'index';
     return (
       <div>
         <NavBar />
-        <ReactCSSTransitionGroup transitionName="slide" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
-          {React.cloneElement(this.props.children, { key: segment })}
-        </ReactCSSTransitionGroup>
+        <div className='banner-wrapper'>
+          <img src='/assets/ocean_banner.jpg' className='banner-image' />
+        </div>
+        <div className='main-content'>
+          <About />
+          <Projects />
+          <Skills />
+          <Contact />
+        </div>
       </div>
     );
   }

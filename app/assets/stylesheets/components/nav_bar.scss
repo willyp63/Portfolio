@@ -1,0 +1,60 @@
+@import '../layouts/main';
+@import '../base/font_sizes';
+
+$background-color: orange;
+$text-color: #fff;
+
+$portrait-width: 150px;
+$portrait-top-margin: 25px;
+
+$my-name-top-margin: 15px;
+
+$nav-list-top-margin: 50px;
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100vh;
+  width: $nav-bar-width;
+  background-color: $background-color;
+}
+
+.portrait {
+  width: $portrait-width;
+  margin-left: ($nav-bar-width - $portrait-width)/2;
+  margin-top: $portrait-top-margin;
+  border-radius: 50%;
+}
+
+.my-name {
+  @include header2($color: $text-color);
+  text-align: center;
+  font-weight: bold;
+  margin-top: $my-name-top-margin;
+}
+
+.my-title {
+  @include header4($color: $text-color);
+  text-align: center;
+}
+
+.nav-list {
+  margin-top: $nav-list-top-margin;
+}
+
+.nav-item {
+  @include header3($color: $text-color);
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 1px solid $text-color;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+.nav-item:last-of-type {
+  border-bottom: none;
+}

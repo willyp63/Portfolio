@@ -1,0 +1,31 @@
+@import '../layouts/main';
+
+.banner-wrapper {
+  padding-left: $nav-bar-width;
+  overflow: hidden;
+}
+
+.banner-image {
+  min-width: 100%;
+  height: $banner-height;
+}
+
+.main-content {
+  position: relative;
+  margin-left: $nav-bar-width;
+  padding: $main-content-v-padding $main-content-h-padding;
+}
+
+.content-section::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: lightgray;
+}
+
+.content-section:last-of-type::after {
+  height: 0;
+}

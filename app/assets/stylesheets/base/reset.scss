@@ -1,5 +1,5 @@
 body, form, div, ul, li, a, h1, h2, h3, h4, h5, span, nav,
-i, input, button, p, img, label {
+i, input, button, p, img, label, header {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,11 +14,4 @@ i, input, button, p, img, label {
   list-style: none;
 
   background: transparent;
-}
-
-.cf:after {
-  content: "";
-  display: block;
-  height: 0px;
-  clear: both;
 }
