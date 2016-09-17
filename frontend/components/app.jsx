@@ -15,8 +15,11 @@ const App = React.createClass({
         </div>
         <div className='main-content'>
           <About />
+          <div className='content-section-seperator' />
           <Projects />
+          <div className='content-section-seperator' />
           <Skills />
+          <div className='content-section-seperator' />
           <Contact />
         </div>
       </div>

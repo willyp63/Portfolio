@@ -1,10 +1,12 @@
 @mixin header1($color) {
   font-size: 48px;
+  font-weight: bold;
   color: $color;
 }
 
 @mixin header2($color) {
   font-size: 36px;
+  font-weight: bold;
   color: $color;
 }
 
@@ -19,6 +21,6 @@
 }
 
 @mixin text1($color) {
-  font-size: 12px;
+  font-size: 16px;
   color: $color;
 }

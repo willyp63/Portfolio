@@ -1,13 +1,16 @@
 @import '../base/font_sizes';
+@import '../base/colors';
 
 .about-header {
-  @include header1($color: orange);
+  @include header1($color: $main-color);
 }
 
 .about-general {
-  @include header3($color: gray);
+  @include header3($color: $secondary-color);
+  font-weight: bold;
+  padding: 25px 0;
 }
 
 .about-specific {
-  @include text1($color: gray);
+  @include text1($color: $secondary-color);
 }
