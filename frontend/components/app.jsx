@@ -1,9 +1,20 @@
-const React = require('react');
+import React from 'react';
+import NavBar from './nav_bar';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-module.exports = React.createClass({
+const App = React.createClass({
   render () {
+    const path = this.props.location.pathname;
+    const segment = path.split('/')[1] || 'index';
     return (
-      <h1>Hello World</h1>
+      <div>
+        <NavBar />
+        <ReactCSSTransitionGroup transitionName="slide" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+          {React.cloneElement(this.props.children, { key: segment })}
+        </ReactCSSTransitionGroup>
+      </div>
     );
   }
 });
+
+export default App;
