@@ -1,6 +1,8 @@
 @import '../base/font_sizes';
 @import '../base/colors';
 
+$project-image-margin-top: 25px;
+
 .projects-header {
   @include header1($color: $main-color);
 }
@@ -16,6 +18,7 @@
 }
 
 .project-image {
+  margin-top: $project-image-margin-top;
   float: left;
   width: 45%;
   height: auto;
@@ -36,6 +39,10 @@
   @include text1($color: $secondary-color);
   padding: 15px 0;
   font-style: italic;
+}
+
+.project-bullets {
+  padding-left: 1em;
 }
 
 .project-bullets li {

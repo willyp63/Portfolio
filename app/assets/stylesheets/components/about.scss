@@ -1,6 +1,9 @@
 @import '../base/font_sizes';
 @import '../base/colors';
 
+$about-info-h-padding: 10px;
+$about-v-seperation: 25px;
+
 .about-header {
   @include header1($color: $main-color);
 }
@@ -8,9 +11,10 @@
 .about-general {
   @include header3($color: $secondary-color);
   font-weight: bold;
-  padding: 25px 0;
+  padding: $about-v-seperation $about-info-h-padding;
 }
 
 .about-specific {
   @include text1($color: $secondary-color);
+  padding: 0 $about-info-h-padding;
 }

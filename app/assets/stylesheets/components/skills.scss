@@ -4,3 +4,22 @@
 .skills-header {
   @include header1($color: $main-color);
 }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.skill {
+  flex-basis: 20%;
+  text-align: center;
+  @include header4($color: $secondary-color);
+}
+
+.skill img {
+  width: 60%;
+  height: auto;
+}
