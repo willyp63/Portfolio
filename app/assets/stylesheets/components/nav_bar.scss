@@ -37,6 +37,7 @@ $nav-item-padding: 5px;
 .my-title {
   @include header4($color: $nav-bar-text-color);
   text-align: center;
+  font-style: italic;
 }
 
 .nav-list {
