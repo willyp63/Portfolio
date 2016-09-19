@@ -24,6 +24,10 @@ $extra-space: 75px;
   margin-top: $contact-list-margin-top;
 }
 
+.contact-list li {
+  cursor: pointer;
+}
+
 .contact-list li > a {
   display: flex;
   flex-direction: column;
@@ -55,17 +59,17 @@ $extra-space: 75px;
   margin-left: $resume-download-icon-margin-left;
   width: $icon-size;
   font-size: $icon-size;
+  cursor: pointer;
 }
 
 .resume-download > p {
   bottom: $resume-icon-text-offset;
 }
 
-.contact-list i, .resume-download i {
-  cursor: pointer;
-  transition: color 0.75s;
+.resume-download i, .contact-list i {
+  transition: color 0.5s;
 }
 
-.contact-list i:hover, .resume-download i:hover {
+.resume-download i.highlighted, .contact-list i.highlighted {
   color: $third-color;
 }

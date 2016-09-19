@@ -11,9 +11,11 @@ const Contact = React.createClass({
   },
   _growText (e) {
     $(e.currentTarget).find('p').animate({'font-size': '20px'}, 0);
+    $(e.currentTarget).find('i').addClass('highlighted');
   },
   _shrinkText (e) {
     $(e.currentTarget).find('p').animate({'font-size': '16px'}, 0);
+    $(e.currentTarget).find('i').removeClass('highlighted');
   },
   render () {
     return (
@@ -39,7 +41,7 @@ const Contact = React.createClass({
             </a>
           </li>
         </ul>
-        <h3 className='resume-download-header'>Or Download my Resume</h3>
+        <h3 className='resume-download-header'>Or View my Resume</h3>
         <a className='resume-download' href='/wil-pirino.pdf'>
           <i className="fa fa-file-text"></i>
           <p>Resume</p>

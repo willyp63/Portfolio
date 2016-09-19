@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectImage from './project_image';
 
 const Projects = React.createClass({
   render () {
@@ -7,7 +8,9 @@ const Projects = React.createClass({
         <h1 className='projects-header'>Projects</h1>
         <ul className='project-list'>
           <li className='project'>
-            <img src='/assets/soundscape.jpg' className='project-image' />
+            <ProjectImage imgSrc='/assets/soundscape.jpg'
+                          linkNames={['Live', 'Github']}
+                          links={['http://www.soundsscape.com', 'https://github.com/willyp63/SoundScape']}/>
             <div className='project-info'>
               <h3 className='project-title'>SoundScape</h3>
               <p className='project-description'>A free music-streaming web application built with Ruby on Rails, Express.js, and React.js</p>
@@ -20,7 +23,9 @@ const Projects = React.createClass({
             </div>
           </li>
           <li className='project'>
-            <img src='/assets/fatbat.jpg' className='project-image' />
+            <ProjectImage imgSrc='/assets/fatbat.jpg'
+                          linkNames={['iTunes', 'Github']}
+                          links={['https://itunes.apple.com/us/app/fat-bat-colored-caverns/id1078060795', 'https://github.com/willyp63/Fat_Bat']}/>
             <div className='project-info'>
               <h3 className='project-title'>Fat Bat and the Colored Caverns</h3>
               <p className='project-description'>A side-scrolling arcade game listed on iTunes store for iPhone and iPad written in Objective-C</p>
@@ -32,7 +37,9 @@ const Projects = React.createClass({
             </div>
           </li>
           <li className='project'>
-            <img src='/assets/worm.jpg' className='project-image' />
+            <ProjectImage imgSrc='/assets/worm.jpg'
+                          linkNames={['Live', 'Github']}
+                          links={['https://willyp63.github.io/', 'https://github.com/willyp63/worm']}/>
             <div className='project-info'>
               <h3 className='project-title'>Worm</h3>
               <p className='project-description'>A browser-based game inspired by the classic arcade game Snake utilizing HTML5 Canvas</p>

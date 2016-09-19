@@ -17,12 +17,47 @@ $project-image-margin-top: 25px;
   clear: both;
 }
 
-.project-image {
+.project-image-frame {
+  position: relative;
   margin-top: $project-image-margin-top;
   float: left;
   width: 45%;
   height: auto;
   padding: 0 2.5%;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.project-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-links > a {
+  @include text2($color: $secondary-color);
+  text-align: center;
+  background-color: #fff;
+  height: 36px;
+  line-height: 36px;
+  width: 40%;
+  border-radius: 18px;
+  border: 1px solid $secondary-color;
+  transition: font-size 0.5s;
+  cursor: pointer;
+}
+
+.project-links > a:hover {
+  font-size: 24px;
 }
 
 .project-info {
