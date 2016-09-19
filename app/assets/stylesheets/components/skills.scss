@@ -1,6 +1,10 @@
 @import '../base/font_sizes';
 @import '../base/colors';
 
+$skill-image-scale: 60%;
+$skill-row-top-padding: 25px;
+$skill-text-top-padding: 10px;
+
 .skills-header {
   @include header1($color: $main-color);
 }
@@ -10,7 +14,7 @@
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  padding-top: 25px;
+  padding-top: $skill-row-top-padding;
 }
 
 .skill {
@@ -20,6 +24,10 @@
 }
 
 .skill img {
-  width: 60%;
+  width: $skill-image-scale;
   height: auto;
+}
+
+.skill p {
+  padding-top: $skill-text-top-padding;
 }

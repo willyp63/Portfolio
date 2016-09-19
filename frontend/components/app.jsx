@@ -10,16 +10,16 @@ const App = React.createClass({
     return (
       <div>
         <NavBar />
-        <div className='banner-wrapper'>
+        <div className='banner-wrapper' id='about-start'>
           <img src='/assets/ocean_banner.jpg' className='banner-image' />
         </div>
         <div className='main-content'>
           <About />
-          <div className='content-section-seperator' />
+          <div className='content-section-seperator' id='projects-start' />
           <Projects />
-          <div className='content-section-seperator' />
+          <div className='content-section-seperator' id='skills-start' />
           <Skills />
-          <div className='content-section-seperator' />
+          <div className='content-section-seperator' id='contact-start' />
           <Contact />
         </div>
       </div>

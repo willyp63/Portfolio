@@ -24,3 +24,8 @@
   font-size: 16px;
   color: $color;
 }
+
+@mixin text2($color) {
+  font-size: 20px;
+  color: $color;
+}

@@ -24,12 +24,14 @@ $nav-item-padding: 5px;
   margin-left: ($nav-bar-width - $portrait-width)/2;
   margin-top: $portrait-top-margin;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .my-name {
   @include header2($color: $nav-bar-text-color);
   text-align: center;
   margin-top: $my-name-top-margin;
+  cursor: pointer;
 }
 
 .my-title {
@@ -46,6 +48,12 @@ $nav-item-padding: 5px;
   text-align: center;
   padding: $nav-item-padding 0;
   border-bottom: 1px solid $nav-bar-text-color;
+  transition: color 0.75s, background-color 0.75s;
+}
+
+.nav-item.selected {
+  color: $main-color;
+  background-color: #fff;
 }
 
 .nav-item:hover {
@@ -54,4 +62,24 @@ $nav-item-padding: 5px;
 
 .nav-item:last-of-type {
   border-bottom: none;
+}
+
+.nav-bar-contact-icons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 25px;
+  left: 15%;
+  width: 70%;
+  @include header2($color: $nav-bar-text-color);
+}
+
+.nav-bar-contact-icons > li {
+  cursor: pointer;
+  transition: font-size 0.75s;
+}
+
+.nav-bar-contact-icons > li:hover {
+  font-size: 42px;
 }

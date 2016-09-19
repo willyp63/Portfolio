@@ -1,6 +1,71 @@
 @import '../base/font_sizes';
 @import '../base/colors';
 
+$icon-size: 150px;
+
+$contact-icon-text-offset: -25px;
+$resume-icon-text-offset: -35px;
+
+$resume-download-icon-margin-top: 35px;
+$resume-download-icon-margin-left: 50px;
+$resume-download-header-margin-top: 50px;
+$contact-list-margin-top: 25px;
+
+$extra-space: 75px;
+
+
 .contact-header {
   @include header1($color: $main-color);
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: $contact-list-margin-top;
+}
+
+.contact-list li > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-size: $icon-size;
+}
+
+.contact-list li > a > p, .resume-download > p {
+  @include text1($color: $secondary-color);
+  bottom: $contact-icon-text-offset;
+  position: absolute;
+  transition: font-size 0.5s;
+}
+
+.resume-download-header {
+  @include header3($color: $secondary-color);
+  font-weight: bold;
+  margin-top: $resume-download-header-margin-top;
+}
+
+.resume-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: $resume-download-icon-margin-top;
+  margin-bottom: $extra-space;
+  margin-left: $resume-download-icon-margin-left;
+  width: $icon-size;
+  font-size: $icon-size;
+}
+
+.resume-download > p {
+  bottom: $resume-icon-text-offset;
+}
+
+.contact-list i, .resume-download i {
+  cursor: pointer;
+  transition: color 0.75s;
+}
+
+.contact-list i:hover, .resume-download i:hover {
+  color: $third-color;
 }
