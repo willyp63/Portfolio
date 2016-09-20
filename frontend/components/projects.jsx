@@ -44,9 +44,9 @@ const Projects = React.createClass({
               <h3 className='project-title'>Rails Lite</h3>
               <p className='project-description'>Backend application framework inspired by Rails, includes ORM inspired by Active Record</p>
               <ul className='project-bullets'>
-                <li>bullet 1</li>
-                <li>bullet 2</li>
-                <li>bullet 3</li>
+                <li>Implemented custom middleware for static resource retrieval and server-side error rendering.</li>
+                <li>Used meta programming to support one-to-one, one-to-many, and even through relations for models.</li>
+                <li>Created Flash and Session objects, allowing information to persist for subsequent requests.</li>
               </ul>
             </div>
           </li>

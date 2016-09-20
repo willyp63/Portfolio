@@ -15,6 +15,6 @@ $about-v-seperation: 25px;
 }
 
 .about-specific {
-  @include text1($color: $secondary-color);
+  @include text2($color: $secondary-color);
   padding: 0 $about-info-h-padding;
 }
