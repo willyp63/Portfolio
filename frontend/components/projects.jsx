@@ -37,6 +37,20 @@ const Projects = React.createClass({
             </div>
           </li>
           <li className='project'>
+            <ProjectImage imgSrc='/assets/rails_lite.png'
+                          linkNames={['Github']}
+                          links={['https://github.com/willyp63/rails_lite']}/>
+            <div className='project-info'>
+              <h3 className='project-title'>Rails Lite</h3>
+              <p className='project-description'>Backend application framework inspired by Rails, includes ORM inspired by Active Record</p>
+              <ul className='project-bullets'>
+                <li>bullet 1</li>
+                <li>bullet 2</li>
+                <li>bullet 3</li>
+              </ul>
+            </div>
+          </li>
+          <li className='project'>
             <ProjectImage imgSrc='/assets/worm.jpg'
                           linkNames={['Live', 'Github']}
                           links={['https://willyp63.github.io/', 'https://github.com/willyp63/worm']}/>
