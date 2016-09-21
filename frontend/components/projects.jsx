@@ -45,7 +45,7 @@ const Projects = React.createClass({
               <p className='project-description'>Backend application framework inspired by Rails, includes ORM inspired by Active Record</p>
               <ul className='project-bullets'>
                 <li>Implemented custom middleware for static resource retrieval and server-side error rendering.</li>
-                <li>Used meta programming to support one-to-one, one-to-many, and even through relations for models.</li>
+                <li>Used meta programming to support one-to-one, one-to-many, and through relations for models.</li>
                 <li>Created Flash and Session objects, allowing information to persist for subsequent requests.</li>
               </ul>
             </div>
