@@ -6,7 +6,7 @@ const About = React.createClass({
       <div className='content-section'>
         <h1 className='about-header'>About Me</h1>
         <h3 className='about-general'>I am a San Francisco-based, full-stack web developer proficient in Objective-C, Ruby on Rails, Javascript, and React with Flux architecture.</h3>
-        <p className='about-specific'>Ever since high school I've had a passion for coding! I taught myself most of what I know through web resources, books, and experimentation. I studied computer science at Purdue University, attendeding courses in Data Structures, Algorithm Design, and Computer Architecture. Seeking more hands on experience, I came to App Academy where I learned full-stack web development. I am currently looking for an exciting position to launch my professional career.</p>
+        <p className='about-specific'>Ever since high school I've had a passion for coding! I taught myself a lot of what I know through web resources, books, and experimentation. I studied computer science at Purdue University, attendeding courses in Data Structures, Algorithm Design, and Computer Architecture. Seeking more hands on experience, I came to App Academy where I learned full-stack web development. I am currently looking for an exciting position to launch my professional career.</p>
       </div>
     );
   }
